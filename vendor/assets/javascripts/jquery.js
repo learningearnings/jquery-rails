@@ -78,7 +78,7 @@ var
 
 	// The ready event handler and self cleanup method
 	DOMContentLoaded = function() {
-		if ( document.addEventListener ) {
+		if ( document.removeEventListener ) {
 			document.removeEventListener( "DOMContentLoaded", DOMContentLoaded, false );
 			jQuery.ready();
 		} else if ( document.readyState === "complete" ) {
